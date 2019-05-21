@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-XA-Compatible" content="IE=edge,chrome=1">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="{{ '/css/main.css' | relative_url }}">
+  </head>
+  <body>
+    <div class="site">
+      <header class="header">
+        <h1 class="title"><a href="{{ '/' | relative_url }}">{{ site.name }}</a></h1>
+        <a class="extra" href="{{ '/' | relative_url }}">home</a>
+      </header>
+      {{ content }}
+      <footer class="footer">
+        <div class="contact">
+          <p>
+            Your Name is<br>
+            What You Are<br>
+            you@example.com
+          </p>
+        </div>
+        <div class="contact">
+          <p>
+            <a href="https://github.com/yourname">github.com/yourname</a><br>
+            <a href="https://twitter.com/yourname">twitter.com/yourname</a><br>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
